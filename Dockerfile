@@ -44,5 +44,6 @@ LABEL blaze.service.id="lambo" \
       blaze.service.deployment.minimum-instances="1" \
       blaze.service.deployment.internal-port="5000" \
       blaze.service.deployment.promotion.prod.manual-step="false" \
+      blaze.service.deployment.strategy="yolo" \
       blaze.service.routing.trusted.exposed="true" \
       blaze.service.routing.consumer.exposed="false"
