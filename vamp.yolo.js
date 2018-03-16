@@ -27,7 +27,7 @@ var run = function () {
 var increase = function (gateway, oldWeight) {
   oldWeight = oldWeight.substring(0, oldWeight.length - 1);
   if (oldWeight > 0) {
-	var newWeight = oldWeight - 50;
+	var newWeight = oldWeight - 5;
 	gateway['routes'][$service1]['weight'] = newWeight < 0 ? '0%' : newWeight + '%';
 	gateway['routes'][$service2]['weight'] = newWeight < 0 ? '100%' : (100 - newWeight) + '%';
 	update(gateway);
